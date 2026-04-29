@@ -366,7 +366,7 @@ ${ACTUAL_OUTCOMES.map(o => `  <div class="outcome-item"><span class="bullet">•
 </html>`
 
 async function generatePDF() {
-  const outputPath = path.resolve(__dirname, '../../project.pdf')
+  const outputPath = path.resolve(__dirname, '../project.pdf')
 
   console.log('Launching browser...')
   const browser = await puppeteer.launch({ headless: true })
